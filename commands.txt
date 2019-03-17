@@ -1,0 +1,11 @@
+# stop instance
+aws ec2 stop-instances --instance-id <instance-id>
+
+#start instance
+aws ec2 start-instances --instance-id <instance-id>
+
+#describe instances
+aws ec2 describe-instances
+
+#check if insatnce is running 
+aws ec2 describe-instance-status --filters "Name=instance-state-code,Values=16"
